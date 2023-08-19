@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT_SRC_CLONE') {
             steps {
-                git branch: 'master', url: 'https://github.com/CHAFAH/GROUP-PROJECT.git'
+                git branch: 'master', url: 'https://github.com/HonorablemacDevop/Group-project.git'
             }
         }
         stage('MAVEN BUILD') {
