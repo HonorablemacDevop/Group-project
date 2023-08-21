@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/HonorablemacDevop/Group-project.git'
             }
         } 
-        stage('MAVEN BUILD') {
+        stage('MAVEN_BUILD') {
             steps {
                 script{
                 def mavenHome = tool name: "maven3.9.4", type "maven"
