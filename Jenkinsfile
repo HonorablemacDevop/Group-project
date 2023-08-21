@@ -10,7 +10,7 @@ pipeline {
         stage(MAVEN BUILD) {
             step {
                 script{
-                    def mavenHome = tool name: "meven"
+                    def mavenHome = tool name: "meven3.9.4", type: "maven"
                     def mavenCMD = "${mavenHome}/bin/mvn"
                     sh "${mavenCMD} clean package" 
                 }
