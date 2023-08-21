@@ -6,6 +6,15 @@ pipeline {
             steps {
                 git branch: 'master', url: 'https://github.com/HonorablemacDevop/Group-project.git'
             }
-        }    
+        } 
+        stage(MAVEN BUILD) {
+            step {
+                script{
+                    def mavenHome = tool name: "meven"
+                    def mavenCMD = "${mavenHome}/bin/mvn"
+                    sh "${mavenCMD} clean package" 
+                }
+            }
    }
+}
 }
