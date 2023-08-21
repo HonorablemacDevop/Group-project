@@ -15,6 +15,6 @@ pipeline {
                     sh "${mavenCMD} clean package" 
                 }
             }
-   }
-}
+        }
+    }
 }
