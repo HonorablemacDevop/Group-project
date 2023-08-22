@@ -14,6 +14,7 @@ pipeline {
                 def mavenCMD = "${mavenHome}/bin/mvn"
                 sh "${mavenCMD} clean package"
             }
+         }
         }
         stage('CODE_COVERAGE') {
             steps {
@@ -26,4 +27,4 @@ pipeline {
      }     
   }
  }
-}
+
