@@ -16,7 +16,7 @@ pipeline {
             }
         }
     }
-    stage('CODE COVERAGE') {
+    stage('CODE_COVERAGE') {
             steps {
                 script{
                 def mavenHome = tool name: "maven3.9.4", type: "maven"
