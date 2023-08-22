@@ -179,13 +179,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://192.168.86.35:8081/repository/Group_go_Release/</url>
+	      <url>http://52.23.179.91:8081/repository/Group_Fiata_snapshot/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.237.66.208:8081/repository/Group_go_Snapshot/</url>
+	      <url>http://52.23.179.91:8081/repository/Group_Fiata_snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement>
     <build>
