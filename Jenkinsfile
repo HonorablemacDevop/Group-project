@@ -14,16 +14,16 @@ pipeline {
                 def mavenCMD = "${mavenHome}/bin/mvn"
                 sh "${mavenCMD} clean package"
             }
-         }
+          }
         }
-        stage('MAVEN_BUILD') {
+       stage('CODE COVERAGE') {
             steps {
-               script { 
-                   def mavenHome = tool name: "maven3.9.4", type: "maven"
-                    def mavenCMD = "${mavenHome}/bin/mvn"
-                    sh "${mavenCMD} clean package sonar:sonar"
-                }
+                script{
+                def mavenHome = tool name: "maven3.9.4", type: "maven"
+                def mavenCMD = "${mavenHome}/bin/mvn"
+                sh "${mavenCMD} deploy"
             }
-        }
+          }
+        } 
+      }
     }
-}
